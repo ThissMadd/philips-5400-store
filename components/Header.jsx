@@ -31,9 +31,22 @@ export default function Header() {
 
           <div className="header-actions">
             <a
-              href="#produkt"
+              href="#jetzt-kaufen"
               className="btn btn-primary header-cta"
               style={{ padding: ".7rem 1.3rem", fontSize: ".88rem" }}
+              onClick={(e) => {
+                e.preventDefault();
+                const target = document.getElementById("jetzt-kaufen");
+                target?.scrollIntoView({ behavior: "smooth", block: "start" });
+                const buyButton = target?.querySelector(".buy-row .btn-primary");
+                if (buyButton) {
+                  buyButton.classList.remove("cta-pulse");
+                  // eslint-disable-next-line no-unused-expressions
+                  void buyButton.offsetWidth;
+                  buyButton.classList.add("cta-pulse");
+                  setTimeout(() => buyButton.classList.remove("cta-pulse"), 1800);
+                }
+              }}
             >
               Jetzt sichern
             </a>

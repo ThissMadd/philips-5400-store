@@ -117,6 +117,20 @@ p {
   transform: translateY(-2px);
   box-shadow: 0 18px 38px -12px rgba(169, 100, 42, 0.6);
 }
+@keyframes cta-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(169, 100, 42, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(169, 100, 42, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(169, 100, 42, 0);
+  }
+}
+.cta-pulse {
+  animation: cta-pulse 0.9s ease-out 2;
+}
 .btn-ghost {
   background: transparent;
   border-color: var(--border);
@@ -271,6 +285,7 @@ nav.primary a:hover {
   position: relative;
   padding: 3rem 0 4rem;
   overflow: hidden;
+  scroll-margin-top: 5.5rem;
 }
 .hero .wrap {
   display: grid;
@@ -293,6 +308,73 @@ nav.primary a:hover {
     grid-template-columns: 1fr;
     gap: 2.2rem;
   }
+}
+@media (max-width: 600px) {
+  .hero {
+    padding: 1.2rem 0 2rem;
+  }
+  .hero .wrap {
+    gap: 1.1rem;
+  }
+  .hero-text h1 {
+    font-size: clamp(2rem, 9vw, 2.6rem) !important;
+    line-height: 1.03 !important;
+  }
+  .hero-text > p.muted {
+    margin-top: 0.55rem !important;
+    font-size: 0.9rem !important;
+  }
+  .rating-badge {
+    margin-top: 0.7rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+  }
+  .price-block {
+    margin-top: 0.8rem;
+  }
+  .price-note {
+    margin-top: 0.2rem;
+    font-size: 0.72rem;
+  }
+  .stock-meter {
+    margin-top: 0.6rem;
+  }
+  .color-row {
+    margin-top: 0.8rem;
+    padding-top: 0.7rem;
+  }
+  .color-swatches {
+    margin-top: 0.4rem;
+  }
+  .finance-banner {
+    margin-top: 0.7rem;
+    padding: 0.6rem 0.8rem;
+  }
+  .buy-row {
+    margin-top: 0.8rem;
+  }
+  .hero-sub-note {
+    margin-top: 0.5rem;
+    font-size: 0.74rem;
+  }
+  .gallery-card {
+    padding: 0.6rem;
+  }
+  .gallery-main {
+    aspect-ratio: 4 / 3;
+    padding: 0.5rem;
+  }
+  .gallery-thumbs {
+    margin-top: 0.5rem;
+  }
+  .thumb {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+#jetzt-kaufen {
+  scroll-margin-top: 5.5rem;
 }
 
 .stars {
