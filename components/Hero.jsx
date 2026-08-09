@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section className="hero" id="produkt">
       <div className="wrap">
-        <div className="hero-text reveal" id="jetzt-kaufen">
+        <div className="hero-text reveal">
           <p className="eyebrow">Kaffeevollautomat mit LatteGo</p>
           <h1 style={{ fontSize: "clamp(2.6rem, 5vw + 1rem, 5rem)", lineHeight: 0.98 }}>
             Philips

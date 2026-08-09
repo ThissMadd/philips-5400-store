@@ -62,7 +62,7 @@ export default function BuyPanel() {
         </div>
       </div>
 
-      <div className="buy-row">
+      <div className="buy-row" id="jetzt-kaufen">
         <div className="qty-stepper">
           <button
             type="button"

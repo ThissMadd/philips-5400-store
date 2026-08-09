@@ -37,8 +37,8 @@ export default function Header() {
               onClick={(e) => {
                 e.preventDefault();
                 const target = document.getElementById("jetzt-kaufen");
-                target?.scrollIntoView({ behavior: "smooth", block: "start" });
-                const buyButton = target?.querySelector(".buy-row .btn-primary");
+                target?.scrollIntoView({ behavior: "smooth", block: "end" });
+                const buyButton = target?.querySelector(".btn-primary");
                 if (buyButton) {
                   buyButton.classList.remove("cta-pulse");
                   // eslint-disable-next-line no-unused-expressions
