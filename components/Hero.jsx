@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section className="hero" id="produkt">
       <div className="wrap">
-        <div className="hero-text reveal">
+        <div className="hero-text">
           <p className="eyebrow">Kaffeevollautomat mit LatteGo</p>
           <h1 style={{ fontSize: "clamp(2.6rem, 5vw + 1rem, 5rem)", lineHeight: 0.98 }}>
             Philips
@@ -81,7 +81,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero-media reveal">
+        <div className="hero-media">
           <ProductGallery images={IMAGES} />
         </div>
       </div>
