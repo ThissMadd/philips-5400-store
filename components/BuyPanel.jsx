@@ -1,6 +1,4 @@
-"use client";
-
-const UNIT_PRICE = 74.95;
+const UNIT_PRICE = 64.95;
 const UNIT_OLD_PRICE = 499.99;
 
 function formatEUR(value) {
@@ -56,7 +54,7 @@ export default function BuyPanel() {
       </div>
 
       <div className="buy-row" id="jetzt-kaufen">
-        <a href="https://buy.stripe.com/9B64gCc6eeL711r0T2gMw02" className="btn btn-primary">
+        <a href="https://buy.stripe.com/bJecN81rAgTf4dDcBKgMw03" className="btn btn-primary">
           Jetzt kaufen
         </a>
       </div>
