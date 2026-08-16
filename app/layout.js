@@ -15,7 +15,7 @@ const manrope = localFont({
   display: "swap",
 });
 
-const title = "Philips 5400 Series LatteGo — Kaffeehaus-Qualität für Zuhause";
+const title = "PEWYABT — Philips 5400 Series LatteGo — Kaffeehaus-Qualität für Zuhause";
 const description =
   "Philips 5400 Series LatteGo Kaffeevollautomat zum Restposten-Preis. Kostenloser Versand nach Deutschland, 2 Jahre Garantie, 14 Tage Rückgaberecht.";
 
