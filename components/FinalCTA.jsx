@@ -11,7 +11,7 @@ export default function FinalCTA() {
             <span className="price-badge">&minus;87% sparen</span>
           </div>
           <div className="buy-row">
-            <a href="https://buy.stripe.com/bJecN81rAgTf4dDcBKgMw03" className="btn btn-primary">Jetzt kaufen</a>
+            <a href="https://buy.stripe.com/6oU4gC8U2auRdOd9pygMw04?locale=de" className="btn btn-primary">Jetzt kaufen</a>
           </div>
           <p className="hero-sub-note">Kostenloser Versand ab 50&nbsp;€ · 14 Tage Rückgaberecht · 2 Jahre Garantie</p>
         </div>

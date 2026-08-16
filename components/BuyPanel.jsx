@@ -4,8 +4,15 @@ import { useState } from "react";
 
 const UNIT_PRICE = 74.99;
 const UNIT_OLD_PRICE = 499.99;
-const MAX_QTY = 10;
-const VARIANT_ID = "53382453330256";
+const MAX_QTY = 5;
+
+const CHECKOUT_LINKS = {
+  1: "https://buy.stripe.com/6oU4gC8U2auRdOd9pygMw04?locale=de",
+  2: "https://buy.stripe.com/3cI4gC1rA6eBdOdgS0gMw05?locale=de",
+  3: "https://buy.stripe.com/aFa3cyfiq5ax7pPatCgMw06?locale=de",
+  4: "https://buy.stripe.com/cNi8wSb2a7iF39z6dmgMw07?locale=de",
+  5: "https://buy.stripe.com/00w14q4DM32p11reJSgMw08?locale=de",
+};
 
 function formatEUR(value) {
   return (
@@ -79,7 +86,7 @@ export default function BuyPanel() {
             +
           </button>
         </div>
-        <a href={`https://pewyabt.myshopify.com/cart/${VARIANT_ID}:${qty}`} className="btn btn-primary">
+        <a href={CHECKOUT_LINKS[qty]} className="btn btn-primary">
           Jetzt kaufen
         </a>
       </div>
