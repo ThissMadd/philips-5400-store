@@ -48,7 +48,7 @@ export default function Header() {
                 }
               }}
             >
-              Jetzt sichern
+              Jetzt kaufen
             </a>
             <button
               type="button"
