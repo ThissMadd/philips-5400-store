@@ -1,5 +1,11 @@
-const UNIT_PRICE = 64.95;
+"use client";
+
+import { useState } from "react";
+
+const UNIT_PRICE = 74.99;
 const UNIT_OLD_PRICE = 499.99;
+const MAX_QTY = 10;
+const VARIANT_ID = "53382453330256";
 
 function formatEUR(value) {
   return (
@@ -8,11 +14,13 @@ function formatEUR(value) {
 }
 
 export default function BuyPanel() {
+  const [qty, setQty] = useState(1);
+
   return (
     <>
       <div className="price-block">
-        <span className="price-new">{formatEUR(UNIT_PRICE)}</span>
-        <span className="price-old">UVP {formatEUR(UNIT_OLD_PRICE)}</span>
+        <span className="price-new">{formatEUR(UNIT_PRICE * qty)}</span>
+        <span className="price-old">UVP {formatEUR(UNIT_OLD_PRICE * qty)}</span>
         <span className="price-badge">&minus;87% sparen</span>
       </div>
       <p className="price-note">inkl. MwSt. · zzgl. Versandkosten · Restposten, solange der Vorrat reicht</p>
@@ -54,7 +62,24 @@ export default function BuyPanel() {
       </div>
 
       <div className="buy-row" id="jetzt-kaufen">
-        <a href="https://buy.stripe.com/bJecN81rAgTf4dDcBKgMw03" className="btn btn-primary">
+        <div className="qty-stepper">
+          <button
+            type="button"
+            aria-label="Menge verringern"
+            onClick={() => setQty((q) => Math.max(1, q - 1))}
+          >
+            &minus;
+          </button>
+          <span>{qty}</span>
+          <button
+            type="button"
+            aria-label="Menge erhöhen"
+            onClick={() => setQty((q) => Math.min(MAX_QTY, q + 1))}
+          >
+            +
+          </button>
+        </div>
+        <a href={`https://pewyabt.myshopify.com/cart/${VARIANT_ID}:${qty}`} className="btn btn-primary">
           Jetzt kaufen
         </a>
       </div>

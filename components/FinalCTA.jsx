@@ -6,7 +6,7 @@ export default function FinalCTA() {
           <p className="eyebrow">Nur noch begrenzt verfügbar</p>
           <h2 style={{ marginTop: ".6rem" }}>Hol dir dein Kaffeehaus nach Hause.</h2>
           <div className="price-block">
-            <span className="price-new">64,95&nbsp;€</span>
+            <span className="price-new">74,99&nbsp;€</span>
             <span className="price-old">UVP 499,99&nbsp;€</span>
             <span className="price-badge">&minus;87% sparen</span>
           </div>
