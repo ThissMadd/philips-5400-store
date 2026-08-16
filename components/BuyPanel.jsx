@@ -86,7 +86,21 @@ export default function BuyPanel() {
             +
           </button>
         </div>
-        <a href={CHECKOUT_LINKS[qty]} className="btn btn-primary">
+        <a
+          href={CHECKOUT_LINKS[qty]}
+          className="btn btn-primary"
+          onClick={() => {
+            if (typeof window !== "undefined" && window.fbq) {
+              window.fbq("track", "InitiateCheckout", {
+                content_type: "product",
+                content_ids: ["philips-5400-series"],
+                value: UNIT_PRICE * qty,
+                currency: "EUR",
+                num_items: qty,
+              });
+            }
+          }}
+        >
           Jetzt kaufen
         </a>
       </div>

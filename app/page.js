@@ -12,11 +12,13 @@ import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import PixelViewContent from "@/components/PixelViewContent";
 
 export default function Home() {
   return (
     <>
       <ScrollReveal />
+      <PixelViewContent />
       <TopBar />
       <Header />
       <Hero />

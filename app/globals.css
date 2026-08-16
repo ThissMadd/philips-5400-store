@@ -1215,6 +1215,72 @@ table.compare-table th:first-child {
   color: var(--text-muted);
 }
 
+/* ---------- danke page ---------- */
+.danke-page {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  background: var(--bg-elevated);
+}
+.danke-page .wrap {
+  display: flex;
+  justify-content: center;
+}
+.danke-box {
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  box-shadow: var(--shadow);
+}
+.danke-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.3rem;
+}
+.danke-box .eyebrow {
+  display: block;
+}
+.danke-box h2 {
+  margin-top: 0.5rem;
+}
+.danke-box > p.muted {
+  margin-top: 0.9rem;
+  max-width: 42ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.danke-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin: 2.2rem 0 2rem;
+  text-align: center;
+}
+.danke-steps .trust-box svg {
+  color: var(--accent-strong);
+  margin-bottom: 0.4rem;
+}
+@media (max-width: 560px) {
+  .danke-box {
+    padding: 2.2rem 1.4rem;
+  }
+  .danke-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- faq ---------- */
 .faq {
   padding: 5rem 0;
